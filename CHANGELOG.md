@@ -25,6 +25,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Features
 - Export `mergeThemes` @levithomason ([#285](https://github.com/stardust-ui/react/pull/285))
+- Add `inverted` and `renderContent` props, `content` slot and `color` variable to `Segment` component @Bugaa92 ([#389](https://github.com/stardust-ui/react/pull/389))
 
 ### Documentation
 - Add `Provider` examples @levithomason ([#285](https://github.com/stardust-ui/react/pull/285))
