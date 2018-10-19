@@ -88,6 +88,8 @@ export {
 
 export { default as Segment, SegmentProps } from './components/Segment/Segment'
 
+export { default as Slot } from './components/Slot/Slot'
+
 export { default as Status, StatusPropsWithDefaults, StatusProps } from './components/Status/Status'
 
 export { default as Text, TextProps } from './components/Text/Text'
