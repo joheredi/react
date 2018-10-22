@@ -283,6 +283,9 @@ export const renderImages = (images, ariaLabelPart) => {
         styles={imageButtonStyles}
         onClick={handleSelection}
         title={`${ariaLabelPart} ${image.key}`}
+        role="listitem"
+        aria-setsize={images.length}
+        aria-posinset={index + 1}
       >
         <Image
           styles={imageStyle}
