@@ -19,6 +19,7 @@ const EmojiPopup = () => (
           {
             <Grid
               as="ul"
+              role="list"
               styles={{
                 width: '320px',
                 listStyle: 'none',
