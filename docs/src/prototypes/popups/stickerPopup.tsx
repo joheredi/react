@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Popup, Grid, Input, Menu, TabBehavior, TabListBehavior } from '@stardust-ui/react'
+import { Button, Popup, Grid, Input, Menu, tabBehavior, tabListBehavior } from '@stardust-ui/react'
 import * as _ from 'lodash'
 import { arrayOfStickerImages, renderImages } from './helper'
 
@@ -26,28 +26,28 @@ class StickerPopup extends React.Component {
       key: 'popular',
       content: 'Popular',
       onClick: this.onMenuItemClick,
-      accessibility: TabBehavior,
+      accessibility: tabBehavior,
     },
     {
       key: 'drama',
       content: 'Office drama',
       onClick: this.onMenuItemClick,
-      accessibility: TabBehavior,
+      accessibility: tabBehavior,
     },
-    { key: 'meme', content: 'Meme', onClick: this.onMenuItemClick, accessibility: TabBehavior },
+    { key: 'meme', content: 'Meme', onClick: this.onMenuItemClick, accessibility: tabBehavior },
     {
       key: 'design',
       content: 'Designers',
       onClick: this.onMenuItemClick,
-      accessibility: TabBehavior,
+      accessibility: tabBehavior,
     },
-    { key: 'dev', content: 'Dev', onClick: this.onMenuItemClick, accessibility: TabBehavior },
-    { key: 'legal', content: 'Legal', onClick: this.onMenuItemClick, accessibility: TabBehavior },
+    { key: 'dev', content: 'Dev', onClick: this.onMenuItemClick, accessibility: tabBehavior },
+    { key: 'legal', content: 'Legal', onClick: this.onMenuItemClick, accessibility: tabBehavior },
     {
       key: 'squatch',
       content: 'Team squatch',
       onClick: this.onMenuItemClick,
-      accessibility: TabBehavior,
+      accessibility: tabBehavior,
     },
   ]
 
@@ -66,7 +66,7 @@ class StickerPopup extends React.Component {
             >
               <div className="left-rail" style={{ paddingRight: '10px' }}>
                 <Menu
-                  accessibility={TabListBehavior}
+                  accessibility={tabListBehavior}
                   activeIndex={this.state.activeMenuIndex}
                   items={this.items}
                   vertical
